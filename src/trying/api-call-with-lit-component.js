@@ -19,7 +19,7 @@ export class ApiCallWithLitComponent extends LitElement {
   async firstUpdated() {
     try {
       const response = await fetch(
-        "https://rickandmortyapi.com/api/character/?page=2"
+        // "https://rickandmortyapi.com/api/character/?page=2"
       );
       const data = await response.json();
       this.arrayCharacters = data.results;
