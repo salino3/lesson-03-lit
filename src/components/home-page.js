@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit';
-import { ApiCall } from '../apis';
+import { ApiCall } from '../apis/apis-call';
 import {CardCharacter} from './card-character';
 
 export class HomePage extends LitElement {
