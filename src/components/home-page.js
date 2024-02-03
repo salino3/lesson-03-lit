@@ -11,6 +11,18 @@ export class HomePage extends LitElement {
     css`
       :host {
         display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
       }
     `,
   ];
@@ -27,10 +39,12 @@ export class HomePage extends LitElement {
   render() {
     return html`
       <div>
-        <h2>Hola</h2>
-        ${this.arrayCharacters.map(
-          (item) => html`<card-character .character=${item}></card-character>`
-        )}
+        <h2>Characters List</h2>
+        <section class="list">
+          ${this.arrayCharacters.map(
+            (item) => html`<card-character .character=${item}></card-character>`
+          )}
+        </section>
       </div>
     `;
   }
