@@ -1,7 +1,39 @@
 
 body {
-    background: black;
-    color: gray;
+    background: lightblue;
+    color: #fefae0;
+}
+
+.main_element {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerRoutes {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+}
+
+.contentRoutes {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border: solid;
+        min-width: 200px;
+        padding: 30px;
+}
+.ulList {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
 }
 
 .title {

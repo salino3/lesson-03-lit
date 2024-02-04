@@ -1,17 +1,22 @@
 {
+  "homepage": "https://yourusername.github.io/lesson-03-lit",
   "name": "lesson-03-lit",
   "version": "1.0.0",
   "description": "Lit lesson",
   "main": "index.js",
   "scripts": {
     "start": "web-dev-server --node-resolve --open --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "mkdir -p build && cp -r src/* build/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@web/dev-server": "^0.4.2"
+    "@web/dev-server": "^0.4.2",
+    "gh-pages": "^6.1.1"
   },
   "dependencies": {
     "lit": "^3.1.2"
